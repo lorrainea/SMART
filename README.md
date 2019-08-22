@@ -26,10 +26,10 @@ Column 8: E-value of the pair of supermaximal repeats.
 ```
  Usage: smart <options>
  Available options:
-	 -i <str>   fasta/fastq input file
-	 -o <str>   output file
-	 -l <int>   minimum length of supermaximal repeats
-	 -k <int>   exact number of mismatches
+	 -i <str>   Fasta input file
+	 -o <str>   Output file
+	 -l <int>   Minimum length of supermaximal repeats
+	 -k <int>   Exact number of mismatches
 
 	 -h         help
 ```
