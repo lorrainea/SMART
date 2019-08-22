@@ -9,12 +9,18 @@ SMART is a program which can be used in conjunction with any multiple sequence a
 
 <b>OUTPUT</b>: A BED file containing statistics of supermaximal repeats computed. The output file is specified using the <b>-o</b> option.
 
-Columns 1 and 3: Length of supermaximal repeat.
+Columns 1 and 3: Length of supermaximal repeat. 
+
 Column 2: Starting position of the first supermaximal repeat.
+
 Column 4: Starting position of the second supermaximal repeat.
+
 Column 5: Number of mismatches between the pair of supermaximal repeats.
+
 Column 6: Identity score of the pair of supermaximal repeats.
+
 Column 7: Raw score of the pair of supermaximal repeats.
+
 Column 8: E-value of the pair of supermaximal repeats.
 
 ```
