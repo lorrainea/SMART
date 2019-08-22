@@ -1,0 +1,1772 @@
+The system is: Linux - 3.10.0-327.4.4.el7.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/lorraine/Documents/alfred/CMakeFiles/3.4.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/lorraine/Documents/alfred/CMakeFiles/3.4.1/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_ef747/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_ef747.dir/build.make CMakeFiles/cmTC_ef747.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ef747.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_ef747.dir/testCCompiler.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_ef747
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef747.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_ef747.dir/testCCompiler.c.o  -o cmTC_ef747 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_5e1a8/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_5e1a8.dir/build.make CMakeFiles/cmTC_5e1a8.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5e1a8.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_5e1a8.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.4/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_5e1a8
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e1a8.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_5e1a8.dir/CMakeCCompilerABI.c.o  -o cmTC_5e1a8 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
+Target: x86_64-redhat-linux
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+Thread model: posix
+gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5e1a8' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5e1a8 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_5e1a8.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_5e1a8/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_5e1a8.dir/build.make CMakeFiles/cmTC_5e1a8.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_5e1a8.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_5e1a8.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.4/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_5e1a8]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e1a8.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_5e1a8.dir/CMakeCCompilerABI.c.o  -o cmTC_5e1a8 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5e1a8' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5e1a8 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_5e1a8.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_5e1a8] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..]
+    arg [CMakeFiles/cmTC_5e1a8.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/4.8.5;/usr/lib64;/lib64;/usr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_fdfed/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_fdfed.dir/build.make CMakeFiles/cmTC_fdfed.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fdfed.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_fdfed.dir/feature_tests.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/feature_tests.c
+Linking C executable cmTC_fdfed
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fdfed.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_fdfed.dir/feature_tests.c.o  -o cmTC_fdfed -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_cb4a1/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_cb4a1.dir/build.make CMakeFiles/cmTC_cb4a1.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cb4a1.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_cb4a1.dir/feature_tests.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/feature_tests.c
+Linking C executable cmTC_cb4a1
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb4a1.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_cb4a1.dir/feature_tests.c.o  -o cmTC_cb4a1 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_ae0f9/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_ae0f9.dir/build.make CMakeFiles/cmTC_ae0f9.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ae0f9.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_ae0f9.dir/feature_tests.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/feature_tests.c
+Linking C executable cmTC_ae0f9
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae0f9.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_ae0f9.dir/feature_tests.c.o  -o cmTC_ae0f9 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_2e839/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_2e839.dir/build.make CMakeFiles/cmTC_2e839.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2e839.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_2e839.dir/testCXXCompiler.cxx.o -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_2e839
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e839.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_2e839.dir/testCXXCompiler.cxx.o  -o cmTC_2e839 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_5fd49/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_5fd49.dir/build.make CMakeFiles/cmTC_5fd49.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5fd49.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_5fd49.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.4/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_5fd49
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5fd49.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_5fd49.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_5fd49 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
+Target: x86_64-redhat-linux
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+Thread model: posix
+gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5fd49' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5fd49 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_5fd49.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_5fd49/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_5fd49.dir/build.make CMakeFiles/cmTC_5fd49.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_5fd49.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_5fd49.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.4/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_5fd49]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5fd49.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_5fd49.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_5fd49 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5fd49' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5fd49 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_5fd49.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_5fd49] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..]
+    arg [CMakeFiles/cmTC_5fd49.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/4.8.5;/usr/lib64;/lib64;/usr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++1y] compiler features compiled with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_36921/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_36921.dir/build.make CMakeFiles/cmTC_36921.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_36921.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++1y -o CMakeFiles/cmTC_36921.dir/feature_tests.cxx.o -c /home/lorraine/Documents/alfred/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_36921
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36921.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_36921.dir/feature_tests.cxx.o  -o cmTC_36921 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_24224/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_24224.dir/build.make CMakeFiles/cmTC_24224.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_24224.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_24224.dir/feature_tests.cxx.o -c /home/lorraine/Documents/alfred/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_24224
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24224.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_24224.dir/feature_tests.cxx.o  -o cmTC_24224 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_42aad/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_42aad.dir/build.make CMakeFiles/cmTC_42aad.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_42aad.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_42aad.dir/feature_tests.cxx.o -c /home/lorraine/Documents/alfred/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_42aad
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42aad.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_42aad.dir/feature_tests.cxx.o  -o cmTC_42aad -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_f4e84/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_f4e84.dir/build.make CMakeFiles/cmTC_f4e84.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f4e84.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_f4e84.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f4e84
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4e84.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_f4e84.dir/CheckIncludeFile.c.o  -o cmTC_f4e84 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_2be6e/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_2be6e.dir/build.make CMakeFiles/cmTC_2be6e.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2be6e.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2be6e.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.4/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2be6e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2be6e.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_2be6e.dir/CheckFunctionExists.c.o  -o cmTC_2be6e -rdynamic -lpthread 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_GCC_WALL succeded with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_d5d8c/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_d5d8c.dir/build.make CMakeFiles/cmTC_d5d8c.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d5d8c.dir/src.c.o
+/usr/bin/cc    -DHAVE_GCC_WALL -Wall   -o CMakeFiles/cmTC_d5d8c.dir/src.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d5d8c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5d8c.dir/link.txt --verbose=1
+/usr/bin/cc   -DHAVE_GCC_WALL -Wall    CMakeFiles/cmTC_d5d8c.dir/src.c.o  -o cmTC_d5d8c -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test HAVE_GCC_FOMIT_FRAME_POINTER succeded with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_43f15/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_43f15.dir/build.make CMakeFiles/cmTC_43f15.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_43f15.dir/src.c.o
+/usr/bin/cc    -Wall -DHAVE_GCC_FOMIT_FRAME_POINTER -fomit-frame-pointer   -o CMakeFiles/cmTC_43f15.dir/src.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_43f15
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43f15.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DHAVE_GCC_FOMIT_FRAME_POINTER -fomit-frame-pointer    CMakeFiles/cmTC_43f15.dir/src.c.o  -o cmTC_43f15 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_0ef7a/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_0ef7a.dir/build.make CMakeFiles/cmTC_0ef7a.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0ef7a.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_0ef7a.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0ef7a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ef7a.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_0ef7a.dir/CheckIncludeFile.c.o  -o cmTC_0ef7a -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_804d5/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_804d5.dir/build.make CMakeFiles/cmTC_804d5.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_804d5.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_804d5.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_804d5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_804d5.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_804d5.dir/CheckIncludeFile.c.o  -o cmTC_804d5 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_a8024/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_a8024.dir/build.make CMakeFiles/cmTC_a8024.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a8024.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_a8024.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a8024
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8024.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_a8024.dir/CheckIncludeFile.c.o  -o cmTC_a8024 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_a8aec/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_a8aec.dir/build.make CMakeFiles/cmTC_a8aec.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a8aec.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_a8aec.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a8aec
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8aec.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_a8aec.dir/CheckIncludeFile.c.o  -o cmTC_a8aec -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_cd1f9/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_cd1f9.dir/build.make CMakeFiles/cmTC_cd1f9.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cd1f9.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_cd1f9.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_cd1f9
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd1f9.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_cd1f9.dir/CheckIncludeFile.c.o  -o cmTC_cd1f9 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_a2963/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_a2963.dir/build.make CMakeFiles/cmTC_a2963.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a2963.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_a2963.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a2963
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2963.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_a2963.dir/CheckIncludeFile.c.o  -o cmTC_a2963 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_67009/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_67009.dir/build.make CMakeFiles/cmTC_67009.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_67009.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_67009.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_67009
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67009.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_67009.dir/CheckIncludeFile.c.o  -o cmTC_67009 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_7fe11/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_7fe11.dir/build.make CMakeFiles/cmTC_7fe11.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7fe11.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_7fe11.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7fe11
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7fe11.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_7fe11.dir/CheckIncludeFile.c.o  -o cmTC_7fe11 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_INLINE succeded with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_fd0b9/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_fd0b9.dir/build.make CMakeFiles/cmTC_fd0b9.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fd0b9.dir/src.c.o
+/usr/bin/cc    -Wall -DHAVE_INLINE   -o CMakeFiles/cmTC_fd0b9.dir/src.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_fd0b9
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd0b9.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DHAVE_INLINE    CMakeFiles/cmTC_fd0b9.dir/src.c.o  -o cmTC_fd0b9 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+Source file was:
+inline void func(); void func() { } int main() { func(); return 0; }
+Performing C SOURCE FILE Test HAVE___INLINE succeded with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_6544b/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_6544b.dir/build.make CMakeFiles/cmTC_6544b.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6544b.dir/src.c.o
+/usr/bin/cc    -Wall -DHAVE___INLINE   -o CMakeFiles/cmTC_6544b.dir/src.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_6544b
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6544b.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DHAVE___INLINE    CMakeFiles/cmTC_6544b.dir/src.c.o  -o cmTC_6544b -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+Source file was:
+__inline void func(); void func() { } int main() { func(); return 0; }
+Performing C SOURCE FILE Test HAVE___INLINE__ succeded with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_9aa0b/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_9aa0b.dir/build.make CMakeFiles/cmTC_9aa0b.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9aa0b.dir/src.c.o
+/usr/bin/cc    -Wall -DHAVE___INLINE__   -o CMakeFiles/cmTC_9aa0b.dir/src.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9aa0b
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9aa0b.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DHAVE___INLINE__    CMakeFiles/cmTC_9aa0b.dir/src.c.o  -o cmTC_9aa0b -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+Source file was:
+__inline__ void func(); void func() { } int main() { func(); return 0; }
+Determining size of uint8_t passed with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_a132f/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_a132f.dir/build.make CMakeFiles/cmTC_a132f.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a132f.dir/UINT8_T.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_a132f.dir/UINT8_T.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CheckTypeSize/UINT8_T.c
+Linking C executable cmTC_a132f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a132f.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_a132f.dir/UINT8_T.c.o  -o cmTC_a132f -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+Determining size of int32_t passed with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_2797e/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_2797e.dir/build.make CMakeFiles/cmTC_2797e.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2797e.dir/INT32_T.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_2797e.dir/INT32_T.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CheckTypeSize/INT32_T.c
+Linking C executable cmTC_2797e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2797e.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_2797e.dir/INT32_T.c.o  -o cmTC_2797e -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+Determining if the PRId32 exist passed with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_dee4a/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_dee4a.dir/build.make CMakeFiles/cmTC_dee4a.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dee4a.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_dee4a.dir/CheckSymbolExists.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_dee4a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dee4a.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_dee4a.dir/CheckSymbolExists.c.o  -o cmTC_dee4a -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+File /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <inttypes.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef PRId32
+  return ((int*)(&PRId32))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining size of int64_t passed with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_f3e2d/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_f3e2d.dir/build.make CMakeFiles/cmTC_f3e2d.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f3e2d.dir/INT64_T.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_f3e2d.dir/INT64_T.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CheckTypeSize/INT64_T.c
+Linking C executable cmTC_f3e2d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3e2d.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_f3e2d.dir/INT64_T.c.o  -o cmTC_f3e2d -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+
+Determining if the PRId64 exist passed with the following output:
+Change Dir: /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_f6340/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_f6340.dir/build.make CMakeFiles/cmTC_f6340.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f6340.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_f6340.dir/CheckSymbolExists.c.o   -c /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f6340
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6340.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_f6340.dir/CheckSymbolExists.c.o  -o cmTC_f6340 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp'
+
+File /home/lorraine/Documents/alfred/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <inttypes.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef PRId64
+  return ((int*)(&PRId64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_7af89/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_7af89.dir/build.make CMakeFiles/cmTC_7af89.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7af89.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_7af89.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7af89
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7af89.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_7af89.dir/CheckIncludeFile.c.o  -o cmTC_7af89 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_75f8d/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_75f8d.dir/build.make CMakeFiles/cmTC_75f8d.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_75f8d.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_75f8d.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.4/Modules/CheckFunctionExists.c
+Linking C executable cmTC_75f8d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75f8d.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_75f8d.dir/CheckFunctionExists.c.o  -o cmTC_75f8d -rdynamic -lpthread 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_GCC_WALL succeded with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_77981/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_77981.dir/build.make CMakeFiles/cmTC_77981.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_77981.dir/src.c.o
+/usr/bin/cc    -DHAVE_GCC_WALL -Wall   -o CMakeFiles/cmTC_77981.dir/src.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_77981
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77981.dir/link.txt --verbose=1
+/usr/bin/cc   -DHAVE_GCC_WALL -Wall    CMakeFiles/cmTC_77981.dir/src.c.o  -o cmTC_77981 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test HAVE_GCC_FOMIT_FRAME_POINTER succeded with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_163f7/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_163f7.dir/build.make CMakeFiles/cmTC_163f7.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_163f7.dir/src.c.o
+/usr/bin/cc    -Wall -DHAVE_GCC_FOMIT_FRAME_POINTER -fomit-frame-pointer   -o CMakeFiles/cmTC_163f7.dir/src.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_163f7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_163f7.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DHAVE_GCC_FOMIT_FRAME_POINTER -fomit-frame-pointer    CMakeFiles/cmTC_163f7.dir/src.c.o  -o cmTC_163f7 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b79aa/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_b79aa.dir/build.make CMakeFiles/cmTC_b79aa.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b79aa.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_b79aa.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b79aa
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b79aa.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_b79aa.dir/CheckIncludeFile.c.o  -o cmTC_b79aa -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_48b42/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_48b42.dir/build.make CMakeFiles/cmTC_48b42.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_48b42.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_48b42.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_48b42
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48b42.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_48b42.dir/CheckIncludeFile.c.o  -o cmTC_48b42 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_61129/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_61129.dir/build.make CMakeFiles/cmTC_61129.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_61129.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_61129.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_61129
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61129.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_61129.dir/CheckIncludeFile.c.o  -o cmTC_61129 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_57093/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_57093.dir/build.make CMakeFiles/cmTC_57093.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_57093.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_57093.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_57093
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57093.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_57093.dir/CheckIncludeFile.c.o  -o cmTC_57093 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_13e80/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_13e80.dir/build.make CMakeFiles/cmTC_13e80.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_13e80.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_13e80.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_13e80
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13e80.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_13e80.dir/CheckIncludeFile.c.o  -o cmTC_13e80 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_6e319/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_6e319.dir/build.make CMakeFiles/cmTC_6e319.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6e319.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_6e319.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6e319
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e319.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_6e319.dir/CheckIncludeFile.c.o  -o cmTC_6e319 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_33313/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_33313.dir/build.make CMakeFiles/cmTC_33313.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_33313.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_33313.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_33313
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33313.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_33313.dir/CheckIncludeFile.c.o  -o cmTC_33313 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_090bc/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_090bc.dir/build.make CMakeFiles/cmTC_090bc.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_090bc.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_090bc.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_090bc
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_090bc.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_090bc.dir/CheckIncludeFile.c.o  -o cmTC_090bc -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_INLINE succeded with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_aeeb5/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_aeeb5.dir/build.make CMakeFiles/cmTC_aeeb5.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aeeb5.dir/src.c.o
+/usr/bin/cc    -Wall -DHAVE_INLINE   -o CMakeFiles/cmTC_aeeb5.dir/src.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_aeeb5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aeeb5.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DHAVE_INLINE    CMakeFiles/cmTC_aeeb5.dir/src.c.o  -o cmTC_aeeb5 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+Source file was:
+inline void func(); void func() { } int main() { func(); return 0; }
+Performing C SOURCE FILE Test HAVE___INLINE succeded with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_86805/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_86805.dir/build.make CMakeFiles/cmTC_86805.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_86805.dir/src.c.o
+/usr/bin/cc    -Wall -DHAVE___INLINE   -o CMakeFiles/cmTC_86805.dir/src.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_86805
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86805.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DHAVE___INLINE    CMakeFiles/cmTC_86805.dir/src.c.o  -o cmTC_86805 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+Source file was:
+__inline void func(); void func() { } int main() { func(); return 0; }
+Performing C SOURCE FILE Test HAVE___INLINE__ succeded with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_729a9/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_729a9.dir/build.make CMakeFiles/cmTC_729a9.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_729a9.dir/src.c.o
+/usr/bin/cc    -Wall -DHAVE___INLINE__   -o CMakeFiles/cmTC_729a9.dir/src.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_729a9
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_729a9.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DHAVE___INLINE__    CMakeFiles/cmTC_729a9.dir/src.c.o  -o cmTC_729a9 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+Source file was:
+__inline__ void func(); void func() { } int main() { func(); return 0; }
+Determining size of uint8_t passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_51b58/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_51b58.dir/build.make CMakeFiles/cmTC_51b58.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_51b58.dir/UINT8_T.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_51b58.dir/UINT8_T.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CheckTypeSize/UINT8_T.c
+Linking C executable cmTC_51b58
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51b58.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_51b58.dir/UINT8_T.c.o  -o cmTC_51b58 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining size of int32_t passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_e4a44/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_e4a44.dir/build.make CMakeFiles/cmTC_e4a44.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e4a44.dir/INT32_T.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_e4a44.dir/INT32_T.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CheckTypeSize/INT32_T.c
+Linking C executable cmTC_e4a44
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4a44.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_e4a44.dir/INT32_T.c.o  -o cmTC_e4a44 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the PRId32 exist passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_f4633/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_f4633.dir/build.make CMakeFiles/cmTC_f4633.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f4633.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_f4633.dir/CheckSymbolExists.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f4633
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4633.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_f4633.dir/CheckSymbolExists.c.o  -o cmTC_f4633 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+File /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <inttypes.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef PRId32
+  return ((int*)(&PRId32))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining size of int64_t passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_0fb9f/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_0fb9f.dir/build.make CMakeFiles/cmTC_0fb9f.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0fb9f.dir/INT64_T.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_0fb9f.dir/INT64_T.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CheckTypeSize/INT64_T.c
+Linking C executable cmTC_0fb9f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0fb9f.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_0fb9f.dir/INT64_T.c.o  -o cmTC_0fb9f -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the PRId64 exist passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_98af8/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_98af8.dir/build.make CMakeFiles/cmTC_98af8.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98af8.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_98af8.dir/CheckSymbolExists.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_98af8
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98af8.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_98af8.dir/CheckSymbolExists.c.o  -o cmTC_98af8 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+File /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <inttypes.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef PRId64
+  return ((int*)(&PRId64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_1047b/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_1047b.dir/build.make CMakeFiles/cmTC_1047b.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1047b.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_1047b.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1047b
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1047b.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_1047b.dir/CheckIncludeFile.c.o  -o cmTC_1047b -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_ecfe7/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_ecfe7.dir/build.make CMakeFiles/cmTC_ecfe7.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ecfe7.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ecfe7.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.4/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ecfe7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecfe7.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_ecfe7.dir/CheckFunctionExists.c.o  -o cmTC_ecfe7 -rdynamic -lpthread 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_GCC_WALL succeded with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_8d707/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_8d707.dir/build.make CMakeFiles/cmTC_8d707.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8d707.dir/src.c.o
+/usr/bin/cc    -DHAVE_GCC_WALL -Wall   -o CMakeFiles/cmTC_8d707.dir/src.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8d707
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d707.dir/link.txt --verbose=1
+/usr/bin/cc   -DHAVE_GCC_WALL -Wall    CMakeFiles/cmTC_8d707.dir/src.c.o  -o cmTC_8d707 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test HAVE_GCC_FOMIT_FRAME_POINTER succeded with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_70415/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_70415.dir/build.make CMakeFiles/cmTC_70415.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_70415.dir/src.c.o
+/usr/bin/cc    -Wall -DHAVE_GCC_FOMIT_FRAME_POINTER -fomit-frame-pointer   -o CMakeFiles/cmTC_70415.dir/src.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_70415
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70415.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DHAVE_GCC_FOMIT_FRAME_POINTER -fomit-frame-pointer    CMakeFiles/cmTC_70415.dir/src.c.o  -o cmTC_70415 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_1368a/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_1368a.dir/build.make CMakeFiles/cmTC_1368a.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1368a.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_1368a.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1368a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1368a.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_1368a.dir/CheckIncludeFile.c.o  -o cmTC_1368a -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_d8507/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_d8507.dir/build.make CMakeFiles/cmTC_d8507.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d8507.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_d8507.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d8507
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8507.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_d8507.dir/CheckIncludeFile.c.o  -o cmTC_d8507 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b2ed6/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_b2ed6.dir/build.make CMakeFiles/cmTC_b2ed6.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2ed6.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_b2ed6.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b2ed6
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2ed6.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_b2ed6.dir/CheckIncludeFile.c.o  -o cmTC_b2ed6 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_0ff2e/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_0ff2e.dir/build.make CMakeFiles/cmTC_0ff2e.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0ff2e.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_0ff2e.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0ff2e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ff2e.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_0ff2e.dir/CheckIncludeFile.c.o  -o cmTC_0ff2e -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_877f7/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_877f7.dir/build.make CMakeFiles/cmTC_877f7.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_877f7.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_877f7.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_877f7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_877f7.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_877f7.dir/CheckIncludeFile.c.o  -o cmTC_877f7 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_96850/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_96850.dir/build.make CMakeFiles/cmTC_96850.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_96850.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_96850.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_96850
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96850.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_96850.dir/CheckIncludeFile.c.o  -o cmTC_96850 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_1d26f/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_1d26f.dir/build.make CMakeFiles/cmTC_1d26f.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1d26f.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_1d26f.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1d26f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d26f.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_1d26f.dir/CheckIncludeFile.c.o  -o cmTC_1d26f -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_0d1ad/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_0d1ad.dir/build.make CMakeFiles/cmTC_0d1ad.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0d1ad.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_0d1ad.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0d1ad
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d1ad.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_0d1ad.dir/CheckIncludeFile.c.o  -o cmTC_0d1ad -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_INLINE succeded with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b9fc5/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_b9fc5.dir/build.make CMakeFiles/cmTC_b9fc5.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b9fc5.dir/src.c.o
+/usr/bin/cc    -Wall -DHAVE_INLINE   -o CMakeFiles/cmTC_b9fc5.dir/src.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b9fc5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9fc5.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DHAVE_INLINE    CMakeFiles/cmTC_b9fc5.dir/src.c.o  -o cmTC_b9fc5 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+Source file was:
+inline void func(); void func() { } int main() { func(); return 0; }
+Performing C SOURCE FILE Test HAVE___INLINE succeded with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_28297/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_28297.dir/build.make CMakeFiles/cmTC_28297.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_28297.dir/src.c.o
+/usr/bin/cc    -Wall -DHAVE___INLINE   -o CMakeFiles/cmTC_28297.dir/src.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_28297
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28297.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DHAVE___INLINE    CMakeFiles/cmTC_28297.dir/src.c.o  -o cmTC_28297 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+Source file was:
+__inline void func(); void func() { } int main() { func(); return 0; }
+Performing C SOURCE FILE Test HAVE___INLINE__ succeded with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_5bcba/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_5bcba.dir/build.make CMakeFiles/cmTC_5bcba.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5bcba.dir/src.c.o
+/usr/bin/cc    -Wall -DHAVE___INLINE__   -o CMakeFiles/cmTC_5bcba.dir/src.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_5bcba
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bcba.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DHAVE___INLINE__    CMakeFiles/cmTC_5bcba.dir/src.c.o  -o cmTC_5bcba -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+Source file was:
+__inline__ void func(); void func() { } int main() { func(); return 0; }
+Determining size of uint8_t passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_8ecd0/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_8ecd0.dir/build.make CMakeFiles/cmTC_8ecd0.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8ecd0.dir/UINT8_T.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_8ecd0.dir/UINT8_T.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CheckTypeSize/UINT8_T.c
+Linking C executable cmTC_8ecd0
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ecd0.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_8ecd0.dir/UINT8_T.c.o  -o cmTC_8ecd0 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining size of int32_t passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_fce33/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_fce33.dir/build.make CMakeFiles/cmTC_fce33.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fce33.dir/INT32_T.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_fce33.dir/INT32_T.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CheckTypeSize/INT32_T.c
+Linking C executable cmTC_fce33
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fce33.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_fce33.dir/INT32_T.c.o  -o cmTC_fce33 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the PRId32 exist passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_2ce86/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_2ce86.dir/build.make CMakeFiles/cmTC_2ce86.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2ce86.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_2ce86.dir/CheckSymbolExists.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_2ce86
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ce86.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_2ce86.dir/CheckSymbolExists.c.o  -o cmTC_2ce86 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+File /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <inttypes.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef PRId32
+  return ((int*)(&PRId32))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining size of int64_t passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_5a0c0/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_5a0c0.dir/build.make CMakeFiles/cmTC_5a0c0.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5a0c0.dir/INT64_T.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_5a0c0.dir/INT64_T.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CheckTypeSize/INT64_T.c
+Linking C executable cmTC_5a0c0
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a0c0.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_5a0c0.dir/INT64_T.c.o  -o cmTC_5a0c0 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the PRId64 exist passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b6d84/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_b6d84.dir/build.make CMakeFiles/cmTC_b6d84.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b6d84.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_b6d84.dir/CheckSymbolExists.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b6d84
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6d84.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_b6d84.dir/CheckSymbolExists.c.o  -o cmTC_b6d84 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+File /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <inttypes.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef PRId64
+  return ((int*)(&PRId64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_15a67/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_15a67.dir/build.make CMakeFiles/cmTC_15a67.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_15a67.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_15a67.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_15a67
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15a67.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_15a67.dir/CheckIncludeFile.c.o  -o cmTC_15a67 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_49183/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_49183.dir/build.make CMakeFiles/cmTC_49183.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_49183.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_49183.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.4/Modules/CheckFunctionExists.c
+Linking C executable cmTC_49183
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49183.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_49183.dir/CheckFunctionExists.c.o  -o cmTC_49183 -rdynamic -lpthread 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_GCC_WALL succeded with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_f7e99/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_f7e99.dir/build.make CMakeFiles/cmTC_f7e99.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f7e99.dir/src.c.o
+/usr/bin/cc    -DHAVE_GCC_WALL -Wall   -o CMakeFiles/cmTC_f7e99.dir/src.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f7e99
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7e99.dir/link.txt --verbose=1
+/usr/bin/cc   -DHAVE_GCC_WALL -Wall    CMakeFiles/cmTC_f7e99.dir/src.c.o  -o cmTC_f7e99 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test HAVE_GCC_FOMIT_FRAME_POINTER succeded with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_6e5fa/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_6e5fa.dir/build.make CMakeFiles/cmTC_6e5fa.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6e5fa.dir/src.c.o
+/usr/bin/cc    -Wall -DHAVE_GCC_FOMIT_FRAME_POINTER -fomit-frame-pointer   -o CMakeFiles/cmTC_6e5fa.dir/src.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_6e5fa
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e5fa.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DHAVE_GCC_FOMIT_FRAME_POINTER -fomit-frame-pointer    CMakeFiles/cmTC_6e5fa.dir/src.c.o  -o cmTC_6e5fa -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_00383/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_00383.dir/build.make CMakeFiles/cmTC_00383.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_00383.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_00383.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_00383
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00383.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_00383.dir/CheckIncludeFile.c.o  -o cmTC_00383 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_fa17e/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_fa17e.dir/build.make CMakeFiles/cmTC_fa17e.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fa17e.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_fa17e.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_fa17e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa17e.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_fa17e.dir/CheckIncludeFile.c.o  -o cmTC_fa17e -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_7b84f/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_7b84f.dir/build.make CMakeFiles/cmTC_7b84f.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7b84f.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_7b84f.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7b84f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b84f.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_7b84f.dir/CheckIncludeFile.c.o  -o cmTC_7b84f -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_3e389/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_3e389.dir/build.make CMakeFiles/cmTC_3e389.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3e389.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_3e389.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_3e389
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e389.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_3e389.dir/CheckIncludeFile.c.o  -o cmTC_3e389 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_2c3d1/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_2c3d1.dir/build.make CMakeFiles/cmTC_2c3d1.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2c3d1.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_2c3d1.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2c3d1
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c3d1.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_2c3d1.dir/CheckIncludeFile.c.o  -o cmTC_2c3d1 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_08d89/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_08d89.dir/build.make CMakeFiles/cmTC_08d89.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_08d89.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_08d89.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_08d89
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08d89.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_08d89.dir/CheckIncludeFile.c.o  -o cmTC_08d89 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_e110c/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_e110c.dir/build.make CMakeFiles/cmTC_e110c.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e110c.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_e110c.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_e110c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e110c.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_e110c.dir/CheckIncludeFile.c.o  -o cmTC_e110c -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_e7c32/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_e7c32.dir/build.make CMakeFiles/cmTC_e7c32.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e7c32.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_e7c32.dir/CheckIncludeFile.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_e7c32
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7c32.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_e7c32.dir/CheckIncludeFile.c.o  -o cmTC_e7c32 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_INLINE succeded with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_a9c7d/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_a9c7d.dir/build.make CMakeFiles/cmTC_a9c7d.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a9c7d.dir/src.c.o
+/usr/bin/cc    -Wall -DHAVE_INLINE   -o CMakeFiles/cmTC_a9c7d.dir/src.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_a9c7d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9c7d.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DHAVE_INLINE    CMakeFiles/cmTC_a9c7d.dir/src.c.o  -o cmTC_a9c7d -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+Source file was:
+inline void func(); void func() { } int main() { func(); return 0; }
+Performing C SOURCE FILE Test HAVE___INLINE succeded with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_e4d9b/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_e4d9b.dir/build.make CMakeFiles/cmTC_e4d9b.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e4d9b.dir/src.c.o
+/usr/bin/cc    -Wall -DHAVE___INLINE   -o CMakeFiles/cmTC_e4d9b.dir/src.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e4d9b
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4d9b.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DHAVE___INLINE    CMakeFiles/cmTC_e4d9b.dir/src.c.o  -o cmTC_e4d9b -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+Source file was:
+__inline void func(); void func() { } int main() { func(); return 0; }
+Performing C SOURCE FILE Test HAVE___INLINE__ succeded with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b6fea/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_b6fea.dir/build.make CMakeFiles/cmTC_b6fea.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b6fea.dir/src.c.o
+/usr/bin/cc    -Wall -DHAVE___INLINE__   -o CMakeFiles/cmTC_b6fea.dir/src.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b6fea
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6fea.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DHAVE___INLINE__    CMakeFiles/cmTC_b6fea.dir/src.c.o  -o cmTC_b6fea -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+Source file was:
+__inline__ void func(); void func() { } int main() { func(); return 0; }
+Determining size of uint8_t passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_45c2a/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_45c2a.dir/build.make CMakeFiles/cmTC_45c2a.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_45c2a.dir/UINT8_T.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_45c2a.dir/UINT8_T.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CheckTypeSize/UINT8_T.c
+Linking C executable cmTC_45c2a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45c2a.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_45c2a.dir/UINT8_T.c.o  -o cmTC_45c2a -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining size of int32_t passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_bfbd5/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_bfbd5.dir/build.make CMakeFiles/cmTC_bfbd5.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bfbd5.dir/INT32_T.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_bfbd5.dir/INT32_T.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CheckTypeSize/INT32_T.c
+Linking C executable cmTC_bfbd5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bfbd5.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_bfbd5.dir/INT32_T.c.o  -o cmTC_bfbd5 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the PRId32 exist passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_bc8ca/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_bc8ca.dir/build.make CMakeFiles/cmTC_bc8ca.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bc8ca.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_bc8ca.dir/CheckSymbolExists.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_bc8ca
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc8ca.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_bc8ca.dir/CheckSymbolExists.c.o  -o cmTC_bc8ca -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+File /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <inttypes.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef PRId32
+  return ((int*)(&PRId32))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining size of int64_t passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_10a79/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_10a79.dir/build.make CMakeFiles/cmTC_10a79.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10a79.dir/INT64_T.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_10a79.dir/INT64_T.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CheckTypeSize/INT64_T.c
+Linking C executable cmTC_10a79
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10a79.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_10a79.dir/INT64_T.c.o  -o cmTC_10a79 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+
+Determining if the PRId64 exist passed with the following output:
+Change Dir: /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_c6d94/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_c6d94.dir/build.make CMakeFiles/cmTC_c6d94.dir/build
+gmake[1]: Entering directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c6d94.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_c6d94.dir/CheckSymbolExists.c.o   -c /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_c6d94
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6d94.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_c6d94.dir/CheckSymbolExists.c.o  -o cmTC_c6d94 -rdynamic 
+gmake[1]: Leaving directory `/home/lorraine/Documents/smart/CMakeFiles/CMakeTmp'
+
+File /home/lorraine/Documents/smart/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <inttypes.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef PRId64
+  return ((int*)(&PRId64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

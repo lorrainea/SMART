@@ -1,0 +1,18 @@
+Pre-installation Instructions
+=============================
+
+   This installation requires the pre-installation of a C++ compiler, 
+the cmake build system, and the sdsl-lite library.
+
+Basic Instructions
+==================
+
+Configure and build the executable 'smart' with the following commands,
+
+     cmake .
+     make
+   
+After compilation the binary `smart' will be created in the working 
+directory, e.g. you may call it from this directory via
+
+ S ./smart -h
