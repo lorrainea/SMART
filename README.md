@@ -36,6 +36,6 @@ Column 8: E-value of the pair of supermaximal repeats.
 <b>Example</b>:
 
 ```
- ./smart -i ./data/ecoli/fasta -o ecoli.out -k 1 -l 1000
+ ./smart -i ./data/ecoli.fasta -o ecoli.out -k 1 -l 1000
 ```
 <b>License</b>: GNU GPLv3 License; Copyright (C) 2019 Lorraine A.K. Ayad, Panagiotis Charalampopoulos and Solon P. Pissis.
