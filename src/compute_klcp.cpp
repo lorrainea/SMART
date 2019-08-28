@@ -45,7 +45,7 @@ void print_lcpk(const ReadsDB& rdb, const ivec_t lcpKXY[2][2], const unsigned& k
 	}
 	else 
 	{
-		prob = 0.04;
+		prob = 0.05;
     		matrix = 1;
 	}
 
