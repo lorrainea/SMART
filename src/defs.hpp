@@ -22,7 +22,7 @@
 #include <cstdint>
 #include <vector>
 
-#define PRO_SCORING_MATRIX_SIZE 24
+#define PRO_SCORING_MATRIX_SIZE 23
 #define NUC_SCORING_MATRIX_SIZE 15
 #define pro_delta(a,b) EBLOSUM62_matrix[ BLOSUM[(int)(a)] ][ BLOSUM[(int)(b)] ]
 #define nuc_delta(a,b) EDNAFULL_matrix[ EDNA[(int)(a)] ][ EDNA[(int)(b)] ]
