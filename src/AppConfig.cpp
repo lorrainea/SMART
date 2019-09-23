@@ -43,7 +43,7 @@ void AppConfig::printHelp(std::ostream& ots){
         << "\t -i <file>  fasta/fastq input file" << std::endl
         << "\t -o <file>  output file" << std::endl
         << "\t -l <int>   minimum length of supermaximal repeats" << std::endl
-        << "\t -k <int>   exact number of mismatches" << std::endl
+        << "\t -k <int>   maximum number of mismatches" << std::endl
         << std::endl
         << "\t -h         help " << std::endl
         << std::endl;

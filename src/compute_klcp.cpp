@@ -36,6 +36,8 @@ void print_lcpk(const ReadsDB& rdb, const ivec_t lcpKXY[2][2], const unsigned& k
 	int length = lcpKXY[0][0].size();
 	double prob = 0;
 
+	int seq_len = sx.length();
+
 	int matrix = 0;
 
 	if( alphabet == "DNA")
@@ -50,38 +52,179 @@ void print_lcpk(const ReadsDB& rdb, const ivec_t lcpKXY[2][2], const unsigned& k
 	}
 
 
+	int * errors  = ( int * ) calloc( ( k ) , sizeof(int ) );
+	int len = 0;
+
+
 	for(int i = 0; i<length; i++ )
-	{
+	{	
 		int raw = 0;
 		double evalue = 0;
 		int err  = k;
 
 		a = max( b-1, lcpKXY[0][1][i] );
+
+		len = lcpKXY[0][1][i];
 		
-		if( a == lcpKXY[0][1][i] && b-1 != lcpKXY[0][1][i] )
+		if( a == lcpKXY[0][1][i] && b-1 != len )
 		{	
-	
+		
 			if( (unsigned) lcpKXY[0][1][i] >= l )
 			{
 				int pos1 = i;
 				int pos2 = lcpKXY[0][0][i];
 				int len = lcpKXY[0][1][i];
-	
-		
-				if(  ( length - len ) - max( pos1, pos2 ) < (signed) k )
-					err = ( length - len ) - max( pos1, pos2 );
+				int e = 0;
+
+				int p = 0;
+				int c  =0;
+				int count = 0;
+				while( count < len )	
+				{
+					if( sx[pos1+c] != sx[pos2+c] )
+					{
+						errors[e] = c;
+						e = e + 1;
+					}
+
+					if( c < len / 2 )
+						c = len - p - 1;
+					else 
+					{
+						p = p + 1;
+						c = p ;
+					}
+					count = count + 1;
+
+				}
+
+				err = e;
 
 				if( err == 0 )
-					evalue = 0.5 * ( length - len + 1 ) * ( length - len ) * pow( prob, len ) * ( 1 - prob ) + ( length - len ) * pow( prob, l + 1 ) ;
-				else evalue = 0.5 * length * ( length - 1 ) * nchoosek( len, err ) * pow( prob, len - err ) * pow( 1-prob, err + 2 );
+					evalue = 0.5 * ( seq_len - len + 1 ) * ( seq_len - len ) * pow( prob, len ) * ( 1 - prob ) + ( seq_len - len ) * pow( prob, len + 1 ) ;
+				else evalue = 0.5 * seq_len * ( seq_len - 1 ) * nchoosek( len, err ) * pow( prob, len - err ) * pow( 1-prob, err + 2 );
+
+
+
+				if( err == 1 )
+				{
+					int mins = min( len - errors[0]- 1, errors[0] );
+
+					int new_pos1 = 0;
+					int new_pos2 = 0;
+					int new_len = 0;
+					int new_err = err;
+
+
+					
+					if( mins == len - errors[0]- 1 )
+					{
+						new_pos1 = pos1 ;
+						new_pos2 = pos2 ;
+						new_len = errors[0] ;
+						new_err = new_err - 1;
+
+					}
+					else if ( mins == errors[0] ) 		
+					{		
+						new_pos1 = pos1+errors[0]+1;
+						new_pos2 = pos2+errors[0]+1;
+			
+						new_len = len - errors[0] - 1 ;
+						new_err = new_err - 1;
+
+					}
+
+					double score= 0;
+
+				
+					if( new_err == 0 )
+						score = 0.5 * ( seq_len - new_len + 1 ) * ( seq_len - new_len ) * pow( prob, new_len ) * ( 1 - prob ) + ( seq_len - new_len ) * pow( prob, new_len + 1 ) ;
+					else score = 0.5 * seq_len * ( seq_len - 1 ) * nchoosek( new_len, new_err ) * pow( prob, new_len - new_err ) * pow( 1-prob, new_err + 2 );
+				
+					
+					if( evalue !=0 && score < evalue)
+					{
+
+						pos1 = new_pos1;
+						pos2 = new_pos2;
+						len = new_len;
+						evalue = score;
+						err = new_err;
+					}
+				}
+				else if ( err > 1 )
+				{	
+					int b = 0;
+					int orig_pos1 = pos1;
+					int orig_pos2 = pos2;
+					int orig_len = len;
+
+					while( err >= 1)
+					{
+						int mins = min( len - errors[b]- 1, errors[b] );
+						int new_pos1 = 0;
+						int new_pos2 = 0;
+						int new_len = 0;
+						int new_err = 0;
+
+						if( mins == len - errors[b]- 1 )
+						{
+							new_pos1 = pos1; 
+							new_pos2 = pos2;
+							new_len = orig_len - ( orig_len - errors[b] )  - (orig_len - len ) ;
+							new_err = err - 1;
+
+						}
+						else if ( mins == errors[b] ) 		
+						{		
+							new_pos1 = orig_pos1+ errors[b]+1;
+							new_pos2 = orig_pos2+ errors[b]+1;
+			
+							new_len = len - errors[b] - 1 ;
+							new_err = err - 1;
+
+						}
+
+						double score= 0;
+
+						if( new_err == 0 )
+							score = 0.5 * ( seq_len - new_len + 1 ) * ( seq_len - new_len ) * pow( prob, new_len ) * ( 1 - prob ) + ( seq_len - new_len ) * pow( prob, new_len + 1 ) ;
+						else score = 0.5 * seq_len * ( seq_len - 1 ) * nchoosek( new_len, new_err ) * pow( prob, new_len - new_err ) * pow( 1-prob, new_err + 2 );
+
+
+						if( evalue != 0 && score < evalue)
+						{	pos1 = new_pos1;
+							pos2 = new_pos2;
+							len = new_len;
+							evalue = score;
+							err = new_err;
+
+						}
+
+
+						b = b+1;
+
+						if( b >= e )
+							break;
+						
+					}
+
+
+
+					
+				}
 
 				for(int i = 0; i<len; i++)
 					raw = raw + ( matrix ? pro_delta( sx[pos1 + i], sx[pos2 + i ] ) : nuc_delta( sx[pos1 + i ], sx[pos2 + i ] ) ) ;   
 
 				double identity = (  ( len - k )*1.0 / len*1.0 ) * 100;
 
-				lfs << len<<"\t"<<pos1<<"\t"<<len<<"\t"<<pos2<<"\t"<<err<<"\t"<<fixed<< std::setprecision(3)<<identity<<"\t"<<raw;
-				lfs<<"\t"<<scientific<< evalue<<endl;
+				if( len >= l )
+				{
+					lfs << len<<"\t"<<pos1<<"\t"<<"F"<<"\t"<<len<<"\t"<<pos2<<"\t"<<err<<"\t"<<fixed<< std::setprecision(3)<<identity<<"\t"<<raw;
+					lfs<<"\t"<<scientific<< evalue<<endl;
+				}
 		  
 			}
 		}

@@ -29,7 +29,7 @@ Column 8: E-value of the pair of supermaximal repeats.
 	 -i <str>   Fasta input file
 	 -o <str>   Output file
 	 -l <int>   Minimum length of supermaximal repeats
-	 -k <int>   Exact number of mismatches
+	 -k <int>   Maximum number of mismatches
 
 	 -h         help
 ```
