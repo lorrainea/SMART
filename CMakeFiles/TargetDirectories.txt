@@ -1,4 +1,0 @@
-/home/lorraine/Documents/smart/CMakeFiles/smart.dir
-/home/lorraine/Documents/smart/ext/libdivsufsort/CMakeFiles/uninstall.dir
-/home/lorraine/Documents/smart/ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir
-/home/lorraine/Documents/smart/ext/libdivsufsort/lib/CMakeFiles/divsufsort.dir

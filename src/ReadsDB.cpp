@@ -21,7 +21,7 @@
 **/
 
 #include "ReadsDB.hpp"
-#include "util.hpp"
+#include "utils.hpp"
 #include <fstream>
 #include <string>
 #include <iostream>

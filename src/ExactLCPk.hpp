@@ -20,6 +20,7 @@
 #ifndef EXACTLCPK_H
 #define EXACTLCPK_H
 
+#include "rmq_support.hpp"
 #include "defs.hpp"
 #include "AppConfig.hpp"
 #include "ReadsDB.hpp"
@@ -27,12 +28,13 @@
 #include <stack>
 
 using namespace std;
+using namespace sdsl;
 
 struct InternalNode{
-    int32_t m_leftBound;
-    int32_t m_rightBound;
-    int32_t m_stringDepth;
-    int32_t m_delta;
+    int64_t m_leftBound;
+    int64_t m_rightBound;
+    int64_t m_stringDepth;
+    int64_t m_delta;
 
     bool operator< (const InternalNode& other) const {
         return
@@ -73,15 +75,15 @@ struct InternalNode{
 
 struct L1Suffix{
   //      (c, c', 0/1), where c' = gisa[gsa[c] + d + 1]
-    int32_t m_startPos; // starting position
-    int32_t m_errSAPos; // position after one error's SA loc.
-    int32_t m_srcStr;   // source string
+    int64_t m_startPos; // starting position
+    int64_t m_errSAPos; // position after one error's SA loc.
+    int64_t m_srcStr;   // source string
 
     bool operator< (const L1Suffix& other) const {
         return( m_errSAPos < other.m_errSAPos );
     }
 
-    L1Suffix(int32_t spos, int32_t epos, int32_t src):
+    L1Suffix(int64_t spos, int64_t epos, int64_t src):
         m_startPos(spos), m_errSAPos(epos), m_srcStr(src) { }
 
     L1Suffix(){}
@@ -115,28 +117,28 @@ struct L1Suffix{
 
 class UpperBoundCheck{
 public:
-    bool operator()(const int32_t& value, const int32_t& bound) const{
+    bool operator()(const int64_t& value, const int64_t& bound) const{
         return (value < bound);
     }
 };
 
 class LowerBoundCheck{
 public:
-    bool operator()(const int32_t& value, const int32_t& bound) const{
+    bool operator()(const int64_t& value, const int64_t& bound) const{
         return (value > bound);
     }
 };
 
 class IncrPointer{
 public:
-    void operator()(int32_t& value){
+    void operator()(int64_t& value){
         value += 1;
     }
 };
 
 class DecrPointer{
 public:
-    void operator()(int32_t& value){
+    void operator()(int64_t& value){
         value -= 1;
     }
 };
@@ -144,21 +146,22 @@ public:
 class ExactLCPk{
 private:
     AppConfig& m_aCfg;
-    ivec_t m_klcpXY[2][2];
-    ivec_t m_klcpHistoXY[2];
-    int32_t m_strLengths[2];
-    int32_t m_strLenPfx[2];
-    int32_t m_shiftPos[2];
+    ivec64_t m_klcpXY[2][2];
+    ivec64_t m_klcpHistoXY[2];
+    int64_t m_strLengths[2];
+    int64_t m_strLenPfx[2];
+    int64_t m_shiftPos[2];
     std::string m_strXY;
-    ivec_t m_gsa, m_gisa, m_glcp;
-    int m_kv;
+    ivec64_t m_gsa, m_gisa, m_glcp;
+    int64_t m_kv;
     double m_nPass;
     double m_passSizes;
 
-    rmq_support_sparse_table<ivec_t, true, ivec_t> m_rangeMinQuery;
+    rmq_support_sparse_table<ivec64_t, true> m_rangeMinQuery;
+    sdsl::rmq_succinct_sct<> m_rangeMinQuery_n;
 
-    int32_t leftBound0(int32_t curLeaf);
-    int32_t rightBound0(int32_t curLeaf);
+    int64_t leftBound0(int64_t curLeaf);
+    int64_t rightBound0(int64_t curLeaf);
     void selectInternalNodes0(std::vector<InternalNode>& uNodes);
     void chopPrefix0(const InternalNode& uNode,
                      std::vector<L1Suffix>& leaves);
@@ -167,56 +170,65 @@ private:
 
     void eliminateDupes(std::vector<InternalNode>& uNodes);
 
-    inline int32_t rangeMinLCP(const int32_t& t1, const int32_t& t2){
+    inline int64_t rangeMinLCP(const int64_t& t1, const int64_t& t2){
         if(t1 < 0 || t2 < 0)
             return 0;
-        int32_t mxv = std::max(t1, t2);
-        if(mxv >= (int32_t)m_gsa.size())
+        int64_t mxv = std::max(t1, t2);
+        if(mxv >= (int64_t)m_gsa.size())
             return 0;
-        int32_t mnv = std::min(t1, t2);
-        int32_t rpos = m_rangeMinQuery(mnv == mxv ? mnv : (mnv + 1), mxv);
+        int64_t mnv = std::min(t1, t2);
+        int64_t rpos = 0;
+	if( m_aCfg.r == 1 )
+		rpos  = m_rangeMinQuery(mnv == mxv ? mnv : (mnv + 1), mxv);
+	else rpos = m_rangeMinQuery_n(mnv == mxv ? mnv : (mnv + 1), mxv);
         return m_glcp[rpos];
     }
 
-    inline int32_t rangeMinLCP(const L1Suffix& m1, const L1Suffix& m2){
+    inline int64_t rangeMinLCP(const L1Suffix& m1, const L1Suffix& m2){
         return rangeMinLCP(m1.m_errSAPos, m2.m_errSAPos);
     }
 
-    inline int32_t sufRangeMinLCP(int32_t t1, int32_t t2) const{
+    inline int64_t sufRangeMinLCP(int64_t t1, int64_t t2) const{
         if(t1 < 0 || t2 < 0)
             return 0;
-        if(std::max(t1, t2) >= (int32_t)m_gsa.size())
+        if(std::max(t1, t2) >= (int64_t)m_gsa.size())
             return 0;
-        int32_t st1 = m_gisa[t1];
-        int32_t st2 = m_gisa[t2];
-        int32_t mxv = std::max(st1, st2);
-        int32_t mnv = std::min(st1, st2);
-        int32_t rpos = m_rangeMinQuery(mnv == mxv ? mnv : (mnv + 1), mxv);
+        int64_t st1 = m_gisa[t1];
+        int64_t st2 = m_gisa[t2];
+        int64_t mxv = std::max(st1, st2);
+        int64_t mnv = std::min(st1, st2);
+        int64_t rpos = 0;
+	if( m_aCfg.r == 1 )
+		rpos  = m_rangeMinQuery(mnv == mxv ? mnv : (mnv + 1), mxv);
+	else rpos = m_rangeMinQuery_n(mnv == mxv ? mnv : (mnv + 1), mxv);
         return m_glcp[rpos];
     }
 
-    inline int32_t updatePassLCP(const int32_t& t1, const int32_t& t2){
+    inline int64_t updatePassLCP(const int64_t& t1, const int64_t& t2){
         if(t1 < 0 || t2 < 0)
             return 0;
-        int32_t mxv = std::max(t1, t2);
-        if(mxv > (int32_t)m_gsa.size())
+        int64_t mxv = std::max(t1, t2);
+        if(mxv > (int64_t)m_gsa.size())
             return 0;
-        int32_t mnv = std::min(t1, t2);
-        int32_t rpos = m_rangeMinQuery(mnv == mxv ? mnv : (mnv + 1), mxv);
+        int64_t mnv = std::min(t1, t2);
+        int64_t rpos = 0;
+	if( m_aCfg.r == 1 )
+		rpos  = m_rangeMinQuery(mnv == mxv ? mnv : (mnv + 1), mxv);
+	else rpos = m_rangeMinQuery_n(mnv == mxv ? mnv : (mnv + 1), mxv);
         return 1 + m_glcp[rpos];
     }
 
-    inline int32_t updatePassLCP(const L1Suffix& m1, const L1Suffix& m2){
+    inline int64_t updatePassLCP(const L1Suffix& m1, const L1Suffix& m2){
         return updatePassLCP(m1.m_errSAPos, m2.m_errSAPos);
     }
 
-    inline int32_t strPos(const InternalNode& uNode, const L1Suffix& sfx){
+    inline int64_t strPos(const InternalNode& uNode, const L1Suffix& sfx){
         return sfx.m_startPos - uNode.m_delta - m_shiftPos[sfx.m_srcStr];
     }
 
     template<typename BoundChecker, typename NextPointer>
-    void updatePass(int32_t src_ptr, int32_t tgt_ptr,
-                    const int32_t& tgt_bound,
+    void updatePass(int64_t src_ptr, int64_t tgt_ptr,
+                    const int64_t& tgt_bound,
                     const InternalNode& uNode,
                     const std::vector<L1Suffix>& leaves
 #ifdef DEBUG
@@ -237,13 +249,13 @@ private:
         if(!bound_check(tgt_ptr, tgt_bound) )
             return;
         while(true){
-            int32_t rmin = 0;
-            int32_t tgt = leaves[tgt_ptr].m_srcStr,
+            int64_t rmin = 0;
+            int64_t tgt = leaves[tgt_ptr].m_srcStr,
                 tpos = strPos(uNode, leaves[tgt_ptr]);
             // - get LCP between src_ptr and tgt_ptr from RMQ
             rmin = updatePassLCP(leaves[src_ptr], leaves[tgt_ptr]);
 		
-            int32_t score = uNode.m_stringDepth + uNode.m_delta + rmin;
+            int64_t score = uNode.m_stringDepth + uNode.m_delta + rmin;
 #ifdef DEBUG
             m_aCfg.lfs << "\t[ \""
                        << dbgStr << "\",\t"
@@ -260,14 +272,14 @@ private:
             m_aCfg.lfs  << "]," << std::endl;
 #endif
             assert(tpos >= 0);
-            assert(tpos < (int32_t)m_klcpXY[tgt][1].size());
+            assert(tpos < (int64_t)m_klcpXY[tgt][1].size());
             // - update target's LCP, if score is higher
             if(score > m_klcpXY[tgt][1][tpos]){
                 m_klcpXY[tgt][0][tpos] = strPos(uNode, leaves[src_ptr]);
                 m_klcpXY[tgt][1][tpos] = score;
             }
             // - update tgt_ptr; quit if out of bounds
-            int32_t prev_tgt = tgt_ptr;
+            int64_t prev_tgt = tgt_ptr;
             next_ptr(tgt_ptr);
             if(!bound_check(tgt_ptr, tgt_bound))
                 break;
@@ -280,10 +292,10 @@ private:
     void computeK(InternalNode& uNode, std::vector<L1Suffix>& uLeaves,
                   int searchLevel);
     void computeK();
-    int32_t leftBoundK(const std::vector<L1Suffix>& trieLeaves,
-                       int32_t curLeaf);
-    int32_t rightBoundK(const std::vector<L1Suffix>& trieLeaves,
-                        int32_t curLeaf);
+    int64_t leftBoundK(const std::vector<L1Suffix>& trieLeaves,
+                       int64_t curLeaf);
+    int64_t rightBoundK(const std::vector<L1Suffix>& trieLeaves,
+                        int64_t curLeaf);
     void selectInternalNodesK(const InternalNode& prevNode,
                               const std::vector<L1Suffix>& leaves,
                               std::vector<InternalNode>& trieNodes);
@@ -294,13 +306,13 @@ private:
     void selectSuffixes0(const InternalNode& uNode,
                          std::vector<L1Suffix>& leaves);
 
-    int32_t ansvLB0(int32_t curLeaf, int32_t ansvBound);
-    int32_t ansvRB0(int32_t curLeaf, int32_t ansvBound);
-    int32_t ansvLBK(const std::vector<L1Suffix>& trieLeaves,
-                    int32_t curLeaf, int32_t minIdx,
-                    int32_t ansvBound);
-    int32_t ansvRBK(const std::vector<L1Suffix>& trieLeaves,
-                    int32_t curLeaf, int32_t ansvBound);
+    int64_t ansvLB0(int64_t curLeaf, int64_t ansvBound);
+    int64_t ansvRB0(int64_t curLeaf, int64_t ansvBound);
+    int64_t ansvLBK(const std::vector<L1Suffix>& trieLeaves,
+                    int64_t curLeaf, int64_t minIdx,
+                    int64_t ansvBound);
+    int64_t ansvRBK(const std::vector<L1Suffix>& trieLeaves,
+                    int64_t curLeaf, int64_t ansvBound);
 public:
     friend class HeuristicLCPk;
     friend class LRHeuristicLCPk;
@@ -308,11 +320,11 @@ public:
               AppConfig& cfg);
     void print(std::ostream& ofs);
     void compute();
-    auto getkLCP() -> const ivec_t (&)[2][2] {
+    auto getkLCP() -> const ivec64_t (&)[2][2] {
         return m_klcpXY;
     }
 
-    auto getkLCPHisto() -> const ivec_t (&)[2] {
+    auto getkLCPHisto() -> const ivec64_t (&)[2] {
       return m_klcpHistoXY;
     }
     void computeTest(int k);

@@ -46,10 +46,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lorraine/Documents/smart
+CMAKE_SOURCE_DIR = /home/lorraine/Documents/SMART
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lorraine/Documents/smart
+CMAKE_BINARY_DIR = /home/lorraine/Documents/SMART
 
 # Utility rule file for uninstall.
 
@@ -57,7 +57,7 @@ CMAKE_BINARY_DIR = /home/lorraine/Documents/smart
 include ext/libdivsufsort/CMakeFiles/uninstall.dir/progress.make
 
 ext/libdivsufsort/CMakeFiles/uninstall:
-	cd /home/lorraine/Documents/smart/ext/libdivsufsort && /usr/local/bin/cmake -P /home/lorraine/Documents/smart/ext/libdivsufsort/CMakeModules/cmake_uninstall.cmake
+	cd /home/lorraine/Documents/SMART/ext/libdivsufsort && /usr/local/bin/cmake -P /home/lorraine/Documents/SMART/ext/libdivsufsort/CMakeModules/cmake_uninstall.cmake
 
 uninstall: ext/libdivsufsort/CMakeFiles/uninstall
 uninstall: ext/libdivsufsort/CMakeFiles/uninstall.dir/build.make
@@ -70,10 +70,10 @@ ext/libdivsufsort/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : ext/libdivsufsort/CMakeFiles/uninstall.dir/build
 
 ext/libdivsufsort/CMakeFiles/uninstall.dir/clean:
-	cd /home/lorraine/Documents/smart/ext/libdivsufsort && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/lorraine/Documents/SMART/ext/libdivsufsort && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : ext/libdivsufsort/CMakeFiles/uninstall.dir/clean
 
 ext/libdivsufsort/CMakeFiles/uninstall.dir/depend:
-	cd /home/lorraine/Documents/smart && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lorraine/Documents/smart /home/lorraine/Documents/smart/ext/libdivsufsort /home/lorraine/Documents/smart /home/lorraine/Documents/smart/ext/libdivsufsort /home/lorraine/Documents/smart/ext/libdivsufsort/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lorraine/Documents/SMART && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lorraine/Documents/SMART /home/lorraine/Documents/SMART/ext/libdivsufsort /home/lorraine/Documents/SMART /home/lorraine/Documents/SMART/ext/libdivsufsort /home/lorraine/Documents/SMART/ext/libdivsufsort/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ext/libdivsufsort/CMakeFiles/uninstall.dir/depend
 

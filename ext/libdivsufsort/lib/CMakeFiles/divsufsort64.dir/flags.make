@@ -6,5 +6,5 @@ C_FLAGS =  -Wall -O3 -DNDEBUG -fomit-frame-pointer   -DBUILD_DIVSUFSORT64
 
 C_DEFINES = -DHAVE_CONFIG_H=1 -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS
 
-C_INCLUDES = -I/home/lorraine/Documents/smart/ext/libdivsufsort/lib/../include 
+C_INCLUDES = -I/home/lorraine/Documents/SMART/ext/libdivsufsort/lib/../include 
 

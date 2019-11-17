@@ -25,8 +25,8 @@
 #include "ReadsDB.hpp"
 
 void print_lcpk(const ReadsDB& rdb,
-                const ivec_t lcpKXY[2][2], const unsigned& k, const unsigned& l,
-                std::ostream& lfs, std::string& alphabet);
+                const ivec64_t lcpKXY[2][2], const unsigned& k, const unsigned& l,
+                std::ostream& lfs, std::string& alphabet, const unsigned& trim);
 void compute_klcp(ReadsDB& rdb, AppConfig& cfg);
 
 #endif /* COMPUTE_KLCP_H */

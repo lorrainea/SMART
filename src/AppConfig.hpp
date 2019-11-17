@@ -39,11 +39,11 @@ struct AppConfig{
     std::ofstream ofs;
     std::ofstream lfs;
     std::ofstream histfs;
-    int kv;
-    int l;
-    int method;
-    int extend;
-    bool only_lcp;
+    int64_t kv;
+    int64_t l;
+    int64_t r;
+    int64_t t;
+    int64_t method;
     bool histogram;
     std::string histf;
 
@@ -52,10 +52,10 @@ struct AppConfig{
     void write(std::ostream& ots);
     AppConfig(const std::vector<std::string>& files,
               const std::string& of,
-              int kval, int ell, int mt, int ext = 0);
+              int64_t kval, int64_t ell, int64_t rmq_type, int64_t trim);
     AppConfig(int argc, char** argv);
     ~AppConfig();
 };
-int nchoosek( int n, int k );
+int64_t nchoosek( int64_t n, int64_t k );
 
 #endif /* APPCONFIG_H */

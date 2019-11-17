@@ -1,4 +1,4 @@
-# Install script for directory: /home/lorraine/Documents/smart/ext/libdivsufsort/include
+# Install script for directory: /home/lorraine/Documents/SMART/ext/libdivsufsort/include
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -41,7 +41,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include" TYPE FILE FILES "/home/lorraine/Documents/smart/ext/libdivsufsort/include/divsufsort.h")
+file(INSTALL DESTINATION "/usr/local/include" TYPE FILE FILES "/home/lorraine/Documents/SMART/ext/libdivsufsort/include/divsufsort.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -53,6 +53,6 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/include" TYPE FILE FILES "/home/lorraine/Documents/smart/ext/libdivsufsort/include/divsufsort64.h")
+file(INSTALL DESTINATION "/usr/local/include" TYPE FILE FILES "/home/lorraine/Documents/SMART/ext/libdivsufsort/include/divsufsort64.h")
 endif()
 

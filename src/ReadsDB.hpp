@@ -30,6 +30,7 @@ typedef std::vector<unsigned>    rlengths_t;
 typedef std::vector<std::string> rnames_t;
 typedef std::vector<rlengths_t>  rlengths_vector_t;
 typedef std::vector<rnames_t>    rnames_vector_t;
+
 //  READS DATABASE ---------------------------------------------------
 //  - Encapsulates the read set as a database
 //  - Provides interface to the database

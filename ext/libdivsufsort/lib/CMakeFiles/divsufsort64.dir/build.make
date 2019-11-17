@@ -46,10 +46,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lorraine/Documents/smart
+CMAKE_SOURCE_DIR = /home/lorraine/Documents/SMART
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lorraine/Documents/smart
+CMAKE_BINARY_DIR = /home/lorraine/Documents/SMART
 
 # Include any dependencies generated for this target.
 include ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/depend.make
@@ -62,16 +62,16 @@ include ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/flags.make
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.o: ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/flags.make
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.o: ext/libdivsufsort/lib/divsufsort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lorraine/Documents/smart/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.o"
-	cd /home/lorraine/Documents/smart/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/divsufsort64.dir/divsufsort.o   -c /home/lorraine/Documents/smart/ext/libdivsufsort/lib/divsufsort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lorraine/Documents/SMART/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.o"
+	cd /home/lorraine/Documents/SMART/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/divsufsort64.dir/divsufsort.o   -c /home/lorraine/Documents/SMART/ext/libdivsufsort/lib/divsufsort.c
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/divsufsort64.dir/divsufsort.i"
-	cd /home/lorraine/Documents/smart/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lorraine/Documents/smart/ext/libdivsufsort/lib/divsufsort.c > CMakeFiles/divsufsort64.dir/divsufsort.i
+	cd /home/lorraine/Documents/SMART/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lorraine/Documents/SMART/ext/libdivsufsort/lib/divsufsort.c > CMakeFiles/divsufsort64.dir/divsufsort.i
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/divsufsort64.dir/divsufsort.s"
-	cd /home/lorraine/Documents/smart/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lorraine/Documents/smart/ext/libdivsufsort/lib/divsufsort.c -o CMakeFiles/divsufsort64.dir/divsufsort.s
+	cd /home/lorraine/Documents/SMART/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lorraine/Documents/SMART/ext/libdivsufsort/lib/divsufsort.c -o CMakeFiles/divsufsort64.dir/divsufsort.s
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.o.requires:
 
@@ -86,16 +86,16 @@ ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.o.provides.build: e
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.o: ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/flags.make
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.o: ext/libdivsufsort/lib/sssort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lorraine/Documents/smart/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.o"
-	cd /home/lorraine/Documents/smart/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/divsufsort64.dir/sssort.o   -c /home/lorraine/Documents/smart/ext/libdivsufsort/lib/sssort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lorraine/Documents/SMART/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.o"
+	cd /home/lorraine/Documents/SMART/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/divsufsort64.dir/sssort.o   -c /home/lorraine/Documents/SMART/ext/libdivsufsort/lib/sssort.c
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/divsufsort64.dir/sssort.i"
-	cd /home/lorraine/Documents/smart/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lorraine/Documents/smart/ext/libdivsufsort/lib/sssort.c > CMakeFiles/divsufsort64.dir/sssort.i
+	cd /home/lorraine/Documents/SMART/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lorraine/Documents/SMART/ext/libdivsufsort/lib/sssort.c > CMakeFiles/divsufsort64.dir/sssort.i
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/divsufsort64.dir/sssort.s"
-	cd /home/lorraine/Documents/smart/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lorraine/Documents/smart/ext/libdivsufsort/lib/sssort.c -o CMakeFiles/divsufsort64.dir/sssort.s
+	cd /home/lorraine/Documents/SMART/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lorraine/Documents/SMART/ext/libdivsufsort/lib/sssort.c -o CMakeFiles/divsufsort64.dir/sssort.s
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.o.requires:
 
@@ -110,16 +110,16 @@ ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.o.provides.build: ext/l
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.o: ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/flags.make
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.o: ext/libdivsufsort/lib/trsort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lorraine/Documents/smart/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.o"
-	cd /home/lorraine/Documents/smart/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/divsufsort64.dir/trsort.o   -c /home/lorraine/Documents/smart/ext/libdivsufsort/lib/trsort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lorraine/Documents/SMART/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.o"
+	cd /home/lorraine/Documents/SMART/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/divsufsort64.dir/trsort.o   -c /home/lorraine/Documents/SMART/ext/libdivsufsort/lib/trsort.c
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/divsufsort64.dir/trsort.i"
-	cd /home/lorraine/Documents/smart/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lorraine/Documents/smart/ext/libdivsufsort/lib/trsort.c > CMakeFiles/divsufsort64.dir/trsort.i
+	cd /home/lorraine/Documents/SMART/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lorraine/Documents/SMART/ext/libdivsufsort/lib/trsort.c > CMakeFiles/divsufsort64.dir/trsort.i
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/divsufsort64.dir/trsort.s"
-	cd /home/lorraine/Documents/smart/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lorraine/Documents/smart/ext/libdivsufsort/lib/trsort.c -o CMakeFiles/divsufsort64.dir/trsort.s
+	cd /home/lorraine/Documents/SMART/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lorraine/Documents/SMART/ext/libdivsufsort/lib/trsort.c -o CMakeFiles/divsufsort64.dir/trsort.s
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.o.requires:
 
@@ -134,16 +134,16 @@ ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.o.provides.build: ext/l
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.o: ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/flags.make
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.o: ext/libdivsufsort/lib/utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lorraine/Documents/smart/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.o"
-	cd /home/lorraine/Documents/smart/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/divsufsort64.dir/utils.o   -c /home/lorraine/Documents/smart/ext/libdivsufsort/lib/utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lorraine/Documents/SMART/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.o"
+	cd /home/lorraine/Documents/SMART/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/divsufsort64.dir/utils.o   -c /home/lorraine/Documents/SMART/ext/libdivsufsort/lib/utils.c
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/divsufsort64.dir/utils.i"
-	cd /home/lorraine/Documents/smart/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lorraine/Documents/smart/ext/libdivsufsort/lib/utils.c > CMakeFiles/divsufsort64.dir/utils.i
+	cd /home/lorraine/Documents/SMART/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lorraine/Documents/SMART/ext/libdivsufsort/lib/utils.c > CMakeFiles/divsufsort64.dir/utils.i
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/divsufsort64.dir/utils.s"
-	cd /home/lorraine/Documents/smart/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lorraine/Documents/smart/ext/libdivsufsort/lib/utils.c -o CMakeFiles/divsufsort64.dir/utils.s
+	cd /home/lorraine/Documents/SMART/ext/libdivsufsort/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lorraine/Documents/SMART/ext/libdivsufsort/lib/utils.c -o CMakeFiles/divsufsort64.dir/utils.s
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.o.requires:
 
@@ -172,9 +172,9 @@ ext/libdivsufsort/lib/libdivsufsort64.a: ext/libdivsufsort/lib/CMakeFiles/divsuf
 ext/libdivsufsort/lib/libdivsufsort64.a: ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.o
 ext/libdivsufsort/lib/libdivsufsort64.a: ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build.make
 ext/libdivsufsort/lib/libdivsufsort64.a: ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lorraine/Documents/smart/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libdivsufsort64.a"
-	cd /home/lorraine/Documents/smart/ext/libdivsufsort/lib && $(CMAKE_COMMAND) -P CMakeFiles/divsufsort64.dir/cmake_clean_target.cmake
-	cd /home/lorraine/Documents/smart/ext/libdivsufsort/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/divsufsort64.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lorraine/Documents/SMART/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libdivsufsort64.a"
+	cd /home/lorraine/Documents/SMART/ext/libdivsufsort/lib && $(CMAKE_COMMAND) -P CMakeFiles/divsufsort64.dir/cmake_clean_target.cmake
+	cd /home/lorraine/Documents/SMART/ext/libdivsufsort/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/divsufsort64.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/build: ext/libdivsufsort/lib/libdivsufsort64.a
@@ -189,10 +189,10 @@ ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/requires: ext/libdivsufsort/li
 .PHONY : ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/requires
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/clean:
-	cd /home/lorraine/Documents/smart/ext/libdivsufsort/lib && $(CMAKE_COMMAND) -P CMakeFiles/divsufsort64.dir/cmake_clean.cmake
+	cd /home/lorraine/Documents/SMART/ext/libdivsufsort/lib && $(CMAKE_COMMAND) -P CMakeFiles/divsufsort64.dir/cmake_clean.cmake
 .PHONY : ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/clean
 
 ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/depend:
-	cd /home/lorraine/Documents/smart && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lorraine/Documents/smart /home/lorraine/Documents/smart/ext/libdivsufsort/lib /home/lorraine/Documents/smart /home/lorraine/Documents/smart/ext/libdivsufsort/lib /home/lorraine/Documents/smart/ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lorraine/Documents/SMART && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lorraine/Documents/SMART /home/lorraine/Documents/SMART/ext/libdivsufsort/lib /home/lorraine/Documents/SMART /home/lorraine/Documents/SMART/ext/libdivsufsort/lib /home/lorraine/Documents/SMART/ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ext/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/depend
 

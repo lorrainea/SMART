@@ -26,7 +26,7 @@
 using namespace std;
 
 
-int nchoosek( int n, int k ) 
+int64_t nchoosek(int64_t n, int64_t k ) 
 {
 	if (n < k) 
 		return 0;

@@ -26,19 +26,19 @@
 #include "EDNAFULL.hpp"
 
 
-void print_lcpk(const ReadsDB& rdb, const ivec_t lcpKXY[2][2], const unsigned& k, const unsigned& l, std::ostream& lfs, std::string& alphabet)
+void print64_t_lcpk(const ReadsDB& rdb, const ivec64_t lcpKXY[2][2], const unsigned& k, const unsigned& l, std::ostream& lfs, std::string& alphabet, const unsigned& trim)
 {
 
 	const std::string& sx = rdb.getReadById(0);
 
-	int a = 0;
-	int b = 0;
-	int length = lcpKXY[0][0].size();
+	int64_t a = 0;
+	int64_t b = 0;
+	int64_t length = lcpKXY[0][0].size();
 	double prob = 0;
 
-	int seq_len = sx.length();
+	int64_t seq_len = sx.length();
 
-	int matrix = 0;
+	int64_t matrix = 0;
 
 	if( alphabet == "DNA")
 	{ 
@@ -47,20 +47,20 @@ void print_lcpk(const ReadsDB& rdb, const ivec_t lcpKXY[2][2], const unsigned& k
 	}
 	else 
 	{
-		prob = 0.05;
+		prob = 0.04;
     		matrix = 1;
 	}
 
 
-	int * errors  = ( int * ) calloc( ( k ) , sizeof(int ) );
-	int len = 0;
+	int64_t * errors  = ( int64_t * ) calloc( ( k ) , sizeof(int64_t ) );
+	int64_t len = 0;
 
 
-	for(int i = 0; i<length; i++ )
+	for(int64_t i = 0; i<length; i++ )
 	{	
-		int raw = 0;
+		int64_t raw = 0;
 		double evalue = 0;
-		int err  = k;
+		int64_t err  = k;
 
 		a = max( b-1, lcpKXY[0][1][i] );
 
@@ -71,14 +71,16 @@ void print_lcpk(const ReadsDB& rdb, const ivec_t lcpKXY[2][2], const unsigned& k
 		
 			if( (unsigned) lcpKXY[0][1][i] >= l )
 			{
-				int pos1 = i;
-				int pos2 = lcpKXY[0][0][i];
-				int len = lcpKXY[0][1][i];
-				int e = 0;
+				int64_t pos1 = i;
+				int64_t pos2 = lcpKXY[0][0][i];
+				int64_t len = lcpKXY[0][1][i];
+				int64_t e = 0;
 
-				int p = 0;
-				int c  =0;
-				int count = 0;
+				int64_t p = 0;
+				int64_t c  =0;
+				int64_t count = 0;
+
+				
 				while( count < len )	
 				{
 					if( sx[pos1+c] != sx[pos2+c] )
@@ -105,117 +107,117 @@ void print_lcpk(const ReadsDB& rdb, const ivec_t lcpKXY[2][2], const unsigned& k
 				else evalue = 0.5 * seq_len * ( seq_len - 1 ) * nchoosek( len, err ) * pow( prob, len - err ) * pow( 1-prob, err + 2 );
 
 
-
-				if( err == 1 )
+				if ( trim == 1 )
 				{
-					int mins = min( len - errors[0]- 1, errors[0] );
+					if( err == 1 )
+					{
+						int64_t mins = min( len - errors[0]- 1, errors[0] );
 
-					int new_pos1 = 0;
-					int new_pos2 = 0;
-					int new_len = 0;
-					int new_err = err;
+						int64_t new_pos1 = 0;
+						int64_t new_pos2 = 0;
+						int64_t new_len = 0;
+						int64_t new_err = err;
 
 
 					
-					if( mins == len - errors[0]- 1 )
-					{
-						new_pos1 = pos1 ;
-						new_pos2 = pos2 ;
-						new_len = errors[0] ;
-						new_err = new_err - 1;
-
-					}
-					else if ( mins == errors[0] ) 		
-					{		
-						new_pos1 = pos1+errors[0]+1;
-						new_pos2 = pos2+errors[0]+1;
-			
-						new_len = len - errors[0] - 1 ;
-						new_err = new_err - 1;
-
-					}
-
-					double score= 0;
-
-				
-					if( new_err == 0 )
-						score = 0.5 * ( seq_len - new_len + 1 ) * ( seq_len - new_len ) * pow( prob, new_len ) * ( 1 - prob ) + ( seq_len - new_len ) * pow( prob, new_len + 1 ) ;
-					else score = 0.5 * seq_len * ( seq_len - 1 ) * nchoosek( new_len, new_err ) * pow( prob, new_len - new_err ) * pow( 1-prob, new_err + 2 );
-				
-					
-					if( evalue !=0 && score < evalue)
-					{
-
-						pos1 = new_pos1;
-						pos2 = new_pos2;
-						len = new_len;
-						evalue = score;
-						err = new_err;
-					}
-				}
-				else if ( err > 1 )
-				{	
-					int b = 0;
-					int orig_pos1 = pos1;
-					int orig_pos2 = pos2;
-					int orig_len = len;
-
-					while( err >= 1)
-					{
-						int mins = min( len - errors[b]- 1, errors[b] );
-						int new_pos1 = 0;
-						int new_pos2 = 0;
-						int new_len = 0;
-						int new_err = 0;
-
-						if( mins == len - errors[b]- 1 )
+						if( mins == len - errors[0]- 1 )
 						{
-							new_pos1 = pos1; 
-							new_pos2 = pos2;
-							new_len = orig_len - ( orig_len - errors[b] )  - (orig_len - len ) ;
-							new_err = err - 1;
+							new_pos1 = pos1 ;
+							new_pos2 = pos2 ;
+							new_len = errors[0] ;
+							new_err = new_err - 1;
 
 						}
-						else if ( mins == errors[b] ) 		
+						else if ( mins == errors[0] ) 		
 						{		
-							new_pos1 = orig_pos1+ errors[b]+1;
-							new_pos2 = orig_pos2+ errors[b]+1;
+							new_pos1 = pos1+errors[0]+1;
+							new_pos2 = pos2+errors[0]+1;
 			
-							new_len = len - errors[b] - 1 ;
-							new_err = err - 1;
+							new_len = len - errors[0] - 1 ;
+							new_err = new_err - 1;
 
 						}
 
 						double score= 0;
 
+				
 						if( new_err == 0 )
 							score = 0.5 * ( seq_len - new_len + 1 ) * ( seq_len - new_len ) * pow( prob, new_len ) * ( 1 - prob ) + ( seq_len - new_len ) * pow( prob, new_len + 1 ) ;
 						else score = 0.5 * seq_len * ( seq_len - 1 ) * nchoosek( new_len, new_err ) * pow( prob, new_len - new_err ) * pow( 1-prob, new_err + 2 );
+				
+					
+						if( evalue !=0 && score < evalue)
+						{
 
-
-						if( evalue != 0 && score < evalue)
-						{	pos1 = new_pos1;
+							pos1 = new_pos1;
 							pos2 = new_pos2;
 							len = new_len;
 							evalue = score;
 							err = new_err;
+						}
+					}
+					else if ( err > 1 )
+					{	
+						int64_t b = 0;
+						int64_t orig_pos1 = pos1;
+						int64_t orig_pos2 = pos2;
+						int64_t orig_len = len;
 
+						while( err >= 1)
+						{
+							int64_t mins = min( len - errors[b]- 1, errors[b] );
+							int64_t new_pos1 = 0;
+							int64_t new_pos2 = 0;
+							int64_t new_len = 0;
+							int64_t new_err = 0;
+
+							if( mins == len - errors[b]- 1 )
+							{
+								new_pos1 = pos1; 
+								new_pos2 = pos2;
+								new_len = orig_len - ( orig_len - errors[b] )  - (orig_len - len ) ;
+								new_err = err - 1;
+
+							}
+							else if ( mins == errors[b] ) 		
+							{		
+								new_pos1 = orig_pos1+ errors[b]+1;
+								new_pos2 = orig_pos2+ errors[b]+1;
+			
+								new_len = len - errors[b] - 1 ;
+								new_err = err - 1;
+
+							}
+
+							double score= 0;
+
+							if( new_err == 0 )
+								score = 0.5 * ( seq_len - new_len + 1 ) * ( seq_len - new_len ) * pow( prob, new_len ) * ( 1 - prob ) + ( seq_len - new_len ) * pow( prob, new_len + 1 ) ;
+							else score = 0.5 * seq_len * ( seq_len - 1 ) * nchoosek( new_len, new_err ) * pow( prob, new_len - new_err ) * pow( 1-prob, new_err + 2 );
+
+
+							if( evalue != 0 && score < evalue)
+							{	pos1 = new_pos1;
+								pos2 = new_pos2;
+								len = new_len;
+								evalue = score;
+								err = new_err;
+
+							}
+
+
+							b = b+1;
+
+							if( b >= e )
+								break;
+						
 						}
 
-
-						b = b+1;
-
-						if( b >= e )
-							break;
-						
-					}
-
-
-
 					
+					}
 				}
 
-				for(int i = 0; i<len; i++)
+				for(int64_t i = 0; i<len; i++)
 					raw = raw + ( matrix ? pro_delta( sx[pos1 + i], sx[pos2 + i ] ) : nuc_delta( sx[pos1 + i ], sx[pos2 + i ] ) ) ;   
 
 				double identity = (  ( len - k )*1.0 / len*1.0 ) * 100;
@@ -241,7 +243,7 @@ void klcp_pair_factory( ReadsDB& rdb, AppConfig& cfg){
 
     LCPk lxy(sx, cfg);
     lxy.compute();
-    print_lcpk( rdb, lxy.getkLCP(), cfg.kv, cfg.l, cfg.ofs, cfg.a);
+    print64_t_lcpk( rdb, lxy.getkLCP(), cfg.kv, cfg.l, cfg.ofs, cfg.a, cfg.t );
 }
 
 void compute_klcp(ReadsDB& rdb, AppConfig& cfg)

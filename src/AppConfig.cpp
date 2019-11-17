@@ -17,7 +17,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 **/
 
-#include "util.hpp"
+#include "utils.hpp"
 #include "AppConfig.hpp"
 #include <unistd.h>
 
@@ -31,6 +31,8 @@ void AppConfig::write(std::ostream& ots){
     ots << " \t\"histogram_file\" : \"" << histf << "\"," << std::endl;
     ots << " \t\"kvalue\"   : \"" << kv << "\"," << std::endl;
     ots << " \t\"lvalue\"   : \"" << l << "\"," << std::endl;
+    ots << " \t\"rmqtype\"   : \"" << r << "\"," << std::endl;
+    ots << " \t\"trim\"   : \"" << t << "\"," << std::endl;
     ots << " }," << std::endl;
 }
 
@@ -44,6 +46,8 @@ void AppConfig::printHelp(std::ostream& ots){
         << "\t -o <file>  output file" << std::endl
         << "\t -l <int>   minimum length of supermaximal repeats" << std::endl
         << "\t -k <int>   maximum number of mismatches" << std::endl
+	<< "\t -r <int>   0 for O(n) space for rmqs. 1 for O(nlogn) space for rmqs. Default: 1" << std::endl
+	<< "\t -t <int>   0 not to trim to optimize e-value and 1 to trim to optimize e-value. Default: 1" << std::endl
         << std::endl
         << "\t -h         help " << std::endl
         << std::endl;
@@ -51,7 +55,7 @@ void AppConfig::printHelp(std::ostream& ots){
 
 AppConfig::AppConfig(int argc, char** argv){
     char c;
-    const char* params = "a:i:f:o:l:k:x:t:pnhH";
+    const char* params = "a:i:f:o:l:k:r:t:pnhH";
     help = false;
     app = argv[0];
     inp = "";
@@ -59,10 +63,10 @@ AppConfig::AppConfig(int argc, char** argv){
     outf = "";
     kv = 1;
     l = 100;
-    extend = 0;
+    r = 1;
+    t = 1;
     //method = 0;
     std::string fstr = "";
-    only_lcp = false;
     histogram = false;
     histf= "";
 
@@ -71,11 +75,11 @@ AppConfig::AppConfig(int argc, char** argv){
         case 'i':
             inp = optarg;
             break;
-	case 'a':
-            inp = optarg;
-            break;
         case 'o':
             outf = optarg;
+            break;
+	case 'a':
+            inp = optarg;
             break;
         case 'l':
             l = atoi(optarg);
@@ -92,16 +96,11 @@ AppConfig::AppConfig(int argc, char** argv){
         case 'n':
             method |= 1;
             break;
-        case 't':
-            histf = optarg;
-            histogram = true;
+        case 'r':
+            r = atoi(optarg);
             break;
-        case 'p':
-            only_lcp = true;
-            break;
-        case 'x':
-            extend = atoi(optarg);
-            method |= 2;
+ 	case 't':
+            t = atoi(optarg);
             break;
         }
     }
@@ -111,15 +110,15 @@ AppConfig::AppConfig(int argc, char** argv){
 
 AppConfig::AppConfig(const std::vector<std::string>& files,
                      const std::string& of,
-                     int kval, int ell, int mt, int ext){
+                     int64_t kval, int64_t ell, int64_t rmq_type, int64_t trim){
     app = "testApp";
     ifiles = files;
     outf = of;
     l = ell;
     kv = kval;
-    method = mt;
+    r = rmq_type;
+    t = trim;
     help = false;
-    extend = ext;
 }
 
 bool AppConfig::validate(std::ostream& ots){
@@ -156,12 +155,10 @@ bool AppConfig::validate(std::ostream& ots){
     }
 
     if(histogram){
-        if(kv <= 0 || extend <= 0){
-            ots << "Invalid k or extension values (" << kv
-                << " " << extend << std::endl;
+        if(kv <= 0 ){
+            ots << "Invalid k value (" << kv << std::endl;
             if(kv <= 0) kv = 1;
-            ots << "Will use Default values of k = " << kv
-                << " and extend = 5" << std::endl;
+            ots << "Will use Default values of k = " << kv << std::endl;
         }
     }
 
@@ -174,16 +171,21 @@ bool AppConfig::validate(std::ostream& ots){
     if(l < 0){
         ots << "Invalid l value (" << l
             << "). Using default value of 100" << std::endl;
-        kv = 1;
+        l = 100;
     }
 
 
-    if(extend < 0){
-        ots << "Invalid extension (" << extend
-            << "). Using default setting of 5." << std::endl;
-        extend = 5;
+   if(r !=0 && r != 1){
+        ots << "Invalid r value (" << r
+            << "). Using default value of 0" << std::endl;
+        r = 0;
     }
 
+   if(t !=0 && t != 1){
+        ots << "Invalid t value (" << r
+            << "). Using default value of 1" << std::endl;
+        t = 1;
+    }
     if(!validCfg){
         printHelp(ots);
     }
