@@ -8,6 +8,8 @@ set(CMAKE_BUILD_TYPE Release)
 
 find_package(Threads REQUIRED)
 
+execute_process(COMMAND ${PROJECT_SOURCE_DIR}/pre-install.sh)
+
 # SDSL directory
 set(SDSL_SOURCE_DIR "${PROJECT_SOURCE_DIR}/ext/sdsl-lite")
 
