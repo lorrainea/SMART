@@ -9,6 +9,7 @@ Basic Instructions
 
 Configure and build the executable 'smart' with the following commands,
 
+     ./pre-install.sh
      cmake .
      make
    
