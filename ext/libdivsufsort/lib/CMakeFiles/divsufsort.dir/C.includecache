@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/lorraine/Documents/SMART/ext/libdivsufsort/lib/divsufsort.c
+/home/lorraine/Documents_Linux/SMART/ext/libdivsufsort/lib/divsufsort.c
 divsufsort_private.h
-/home/lorraine/Documents/SMART/ext/libdivsufsort/lib/divsufsort_private.h
+/home/lorraine/Documents_Linux/SMART/ext/libdivsufsort/lib/divsufsort_private.h
 omp.h
 -
 
-/home/lorraine/Documents/SMART/ext/libdivsufsort/lib/sssort.c
+/home/lorraine/Documents_Linux/SMART/ext/libdivsufsort/lib/sssort.c
 divsufsort_private.h
-/home/lorraine/Documents/SMART/ext/libdivsufsort/lib/divsufsort_private.h
+/home/lorraine/Documents_Linux/SMART/ext/libdivsufsort/lib/divsufsort_private.h
 
-/home/lorraine/Documents/SMART/ext/libdivsufsort/lib/trsort.c
+/home/lorraine/Documents_Linux/SMART/ext/libdivsufsort/lib/trsort.c
 divsufsort_private.h
-/home/lorraine/Documents/SMART/ext/libdivsufsort/lib/divsufsort_private.h
+/home/lorraine/Documents_Linux/SMART/ext/libdivsufsort/lib/divsufsort_private.h
 
-/home/lorraine/Documents/SMART/ext/libdivsufsort/lib/utils.c
+/home/lorraine/Documents_Linux/SMART/ext/libdivsufsort/lib/utils.c
 divsufsort_private.h
-/home/lorraine/Documents/SMART/ext/libdivsufsort/lib/divsufsort_private.h
+/home/lorraine/Documents_Linux/SMART/ext/libdivsufsort/lib/divsufsort_private.h
 
 ext/libdivsufsort/lib/../include/config.h
 

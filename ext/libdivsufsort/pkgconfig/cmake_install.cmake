@@ -1,4 +1,4 @@
-# Install script for directory: /home/lorraine/Documents/SMART/ext/libdivsufsort/pkgconfig
+# Install script for directory: /home/lorraine/Documents_Linux/SMART/ext/libdivsufsort/pkgconfig
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,10 +29,15 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/usr/local/lib/pkgconfig/libdivsufsort.pc")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -41,10 +46,10 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/lib/pkgconfig" TYPE FILE FILES "/home/lorraine/Documents/SMART/ext/libdivsufsort/pkgconfig/libdivsufsort.pc")
+file(INSTALL DESTINATION "/usr/local/lib/pkgconfig" TYPE FILE FILES "/home/lorraine/Documents_Linux/SMART/ext/libdivsufsort/pkgconfig/libdivsufsort.pc")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/usr/local/lib/pkgconfig/libdivsufsort64.pc")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -53,6 +58,6 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/lib/pkgconfig" TYPE FILE FILES "/home/lorraine/Documents/SMART/ext/libdivsufsort/pkgconfig/libdivsufsort64.pc")
+file(INSTALL DESTINATION "/usr/local/lib/pkgconfig" TYPE FILE FILES "/home/lorraine/Documents_Linux/SMART/ext/libdivsufsort/pkgconfig/libdivsufsort64.pc")
 endif()
 

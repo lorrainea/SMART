@@ -1,8 +1,8 @@
-IF(NOT EXISTS "/home/lorraine/Documents/SMART/ext/libdivsufsort/install_manifest.txt")
-  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/home/lorraine/Documents/SMART/ext/libdivsufsort/install_manifest.txt\"")
-ENDIF(NOT EXISTS "/home/lorraine/Documents/SMART/ext/libdivsufsort/install_manifest.txt")
+IF(NOT EXISTS "/home/lorraine/Documents_Linux/SMART/ext/libdivsufsort/install_manifest.txt")
+  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/home/lorraine/Documents_Linux/SMART/ext/libdivsufsort/install_manifest.txt\"")
+ENDIF(NOT EXISTS "/home/lorraine/Documents_Linux/SMART/ext/libdivsufsort/install_manifest.txt")
 
-FILE(READ "/home/lorraine/Documents/SMART/ext/libdivsufsort/install_manifest.txt" files)
+FILE(READ "/home/lorraine/Documents_Linux/SMART/ext/libdivsufsort/install_manifest.txt" files)
 STRING(REGEX REPLACE "\n" ";" files "${files}")
 
 SET(NUM 0)
@@ -22,7 +22,7 @@ FOREACH(file ${files})
   IF(${UNINSTALL_CHECK_${NUM}})
     MESSAGE(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")
     EXEC_PROGRAM(
-      "/usr/local/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
+      "/usr/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
       OUTPUT_VARIABLE rm_out
       RETURN_VALUE rm_retval
       )
@@ -33,4 +33,4 @@ FOREACH(file ${files})
   MATH(EXPR NUM "1 + ${NUM}")
 ENDFOREACH(file)
 
-FILE(REMOVE "/home/lorraine/Documents/SMART/ext/libdivsufsort/install_manifest.txt")
+FILE(REMOVE "/home/lorraine/Documents_Linux/SMART/ext/libdivsufsort/install_manifest.txt")
