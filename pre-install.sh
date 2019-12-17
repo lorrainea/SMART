@@ -1,4 +1,6 @@
 #! /bin/sh
 
-cd ext/sdsl-lite
+cd ext
+unzip sdsl-lite.zip
+cd sdsl-lite
 ./install.sh
