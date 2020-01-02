@@ -40,4 +40,11 @@ Column 8: E-value of the pair of supermaximal repeats.
 ```
  ./smart -i ./data/ecoli.fasta -o ecoli.out -k 1 -l 1000
 ```
+<b>Citation</b>
+```
+Lorraine A K Ayad, Panagiotis Charalampopoulos, Solon P Pissis
+SMART: SuperMaximal Approximate Repeats Tool
+Bioinformatics, 2019
+https://doi.org/10.1093/bioinformatics/btz953
+```
 <b>License</b>: GNU GPLv3 License; Copyright (C) 2019 Lorraine A.K. Ayad, Panagiotis Charalampopoulos and Solon P. Pissis.
