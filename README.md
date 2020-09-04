@@ -44,7 +44,7 @@ Column 8: E-value of the pair of supermaximal repeats.
 ```
 Lorraine A K Ayad, Panagiotis Charalampopoulos, Solon P Pissis
 SMART: SuperMaximal Approximate Repeats Tool
-Bioinformatics, 2019
+Bioinformatics, Volume 36, Issue 8, 2020
 https://doi.org/10.1093/bioinformatics/btz953
 ```
 <b>License</b>: GNU GPLv3 License; Copyright (C) 2019 Lorraine A.K. Ayad, Panagiotis Charalampopoulos and Solon P. Pissis.
