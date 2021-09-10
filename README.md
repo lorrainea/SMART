@@ -1,7 +1,7 @@
 SMART: Supermaximal Approximate Repeats Tool
 ===
 
-SMART is a program used to compute supermaximal k-mismtach repeats given a DNA or Protein sequence.
+SMART is a program used to compute supermaximal k-mismatch repeats given a DNA or Protein sequence.
 
 <b>Installation</b>: To compile SMART, please follow the instructions given in file INSTALL.
 
